@@ -1,0 +1,322 @@
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 48px 0 40px;
+}
+
+.title {
+  font-family: 'Nunito', sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--color-primary-dark);
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: var(--color-text-secondary);
+  margin-bottom: 28px;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.searchWrap {
+  display: flex;
+  justify-content: center;
+}
+
+/* 为什么选择低碳饮食 */
+.whySection {
+  margin-bottom: 48px;
+  padding: 32px;
+  background: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+}
+
+.whyTitle {
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--color-primary-dark);
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.whyGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.whyCard {
+  padding: 20px;
+  text-align: center;
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+  transition: transform 0.2s ease;
+}
+
+.whyCard:hover {
+  transform: translateY(-4px);
+}
+
+.whyIcon {
+  font-size: 36px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.whyCard h3 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.whyCard p {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.whyCard strong {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+/* 今日餐食汇总栏 */
+.summaryBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  margin-bottom: 32px;
+  background: linear-gradient(135deg, #2D6A4F, #40916C);
+  border-radius: var(--radius-lg);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(45, 106, 79, 0.2);
+}
+
+.summaryLeft {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.summaryIcon {
+  font-size: 32px;
+}
+
+.summaryTitle {
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.summaryDetail {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.summaryTag {
+  font-size: 12px;
+  padding: 4px 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+
+.summaryRight {
+  display: flex;
+  gap: 24px;
+}
+
+.summaryStat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.summaryStatLabel {
+  font-size: 11px;
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.summaryStatValue {
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.summaryStatUnit {
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+/* Meal sections */
+.section {
+  margin-bottom: 40px;
+}
+
+.sectionTitle {
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.sectionDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  display: inline-block;
+}
+
+.selectedHint {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2D6A4F;
+  padding: 4px 12px;
+  background: rgba(45, 106, 79, 0.1);
+  border-radius: 20px;
+}
+
+.selectHint {
+  font-size: 13px;
+  color: var(--color-text-light);
+  font-weight: 400;
+}
+
+/* Recipe grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Card wrapper for selection */
+.cardWrapper {
+  position: relative;
+  cursor: pointer;
+  border-radius: var(--radius-lg);
+  transition: all 0.25s ease;
+  border: 2px solid transparent;
+}
+
+.cardWrapper:hover {
+  transform: translateY(-4px);
+}
+
+.cardSelected {
+  border-color: #2D6A4F;
+  box-shadow: 0 4px 16px rgba(45, 106, 79, 0.15);
+}
+
+.selectedBadge {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  padding: 4px 16px;
+  background: #2D6A4F;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 20px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(45, 106, 79, 0.3);
+}
+
+/* Empty state */
+.empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--color-text-secondary);
+}
+
+.emptyIcon {
+  font-size: 48px;
+  display: block;
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .whyGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 32px 0 28px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .whySection {
+    padding: 20px;
+    margin-bottom: 32px;
+  }
+
+  .whyGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .summaryBar {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .summaryRight {
+    gap: 16px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .section {
+    margin-bottom: 28px;
+  }
+
+  .sectionTitle {
+    font-size: 18px;
+  }
+}

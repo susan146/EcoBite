@@ -1,0 +1,80 @@
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+}
+
+.header {
+  text-align: center;
+  padding: 48px 0 40px;
+}
+
+.title {
+  font-family: 'Nunito', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--color-primary-dark);
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: var(--color-text-secondary);
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Empty state */
+.empty {
+  text-align: center;
+  padding: 80px 20px;
+  background: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 2px dashed var(--color-border);
+}
+
+.emptyIcon {
+  font-size: 56px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.empty p {
+  font-size: 16px;
+  color: var(--color-text-secondary);
+}
+
+.emptyHint {
+  font-size: 14px !important;
+  color: var(--color-text-light) !important;
+  margin-top: 8px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding: 32px 0 24px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
