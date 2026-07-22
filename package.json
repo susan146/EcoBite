@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "低碳饮食碳足迹追踪与食谱推荐 Web 应用",
   "type": "module",
+  "overrides": {
+    "esbuild": "^0.27.2",
+    "is-generator-function": "1.0.10"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
