@@ -1,6 +1,6 @@
 # EcoBite 🌱
 
-🔗 在线演示: https://ecobite-inky.vercel.app/
+🔗 在线演示: https://eco-bite-liart.vercel.app/
 
 低碳饮食碳足迹追踪与食谱推荐 Web 应用。用户可查看食谱的碳排放数据，发现低碳替代方案，呼应 SDG12 负责任消费目标。
 
